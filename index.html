@@ -38,7 +38,7 @@
 
     /* --- HEADER --- */
     header { 
-        width: 100%; 
+        width: 100%;
         max-width: 1150px; 
         margin-bottom: 10px;
         display: flex;
@@ -49,7 +49,7 @@
     }
     
     h1 { 
-        margin: 0; 
+        margin: 0;
         font-family: var(--font-ui);
         font-size: 2.2rem;
         font-weight: 500;
@@ -62,7 +62,7 @@
     }
     
     .status { 
-        color: var(--accent-orange); 
+        color: var(--accent-orange);
         font-family: var(--font-ui);
         font-size: 1.2rem; 
         font-weight: 500; 
@@ -98,19 +98,19 @@
     .team-rail {
         display: flex;
         flex-wrap: nowrap; 
-        overflow-x: auto; 
+        overflow-x: auto;
         -webkit-overflow-scrolling: touch; 
         
         /* Hide Scrollbar */
         scrollbar-width: none; 
         -ms-overflow-style: none;  
         
-        gap: 8px; 
+        gap: 8px;
         width: 100%;
         
         /* CENTER Alignment Logic */
         /* Default to Center for screens that fit the teams */
-        justify-content: center; 
+        justify-content: center;
         align-items: center;
 
         background-image: linear-gradient(#222 1px, transparent 1px), linear-gradient(90deg, #222 1px, transparent 1px);
@@ -135,8 +135,7 @@
         height: 50px;
         background: linear-gradient(135deg, #2a2a30 0%, #232328 100%);
         border: 1px solid #444;
-        border-left: 3px solid #666; 
-        
+        border-left: 3px solid #666;
         /* Ensure Logo Centering */
         display: flex;
         align-items: center;
@@ -178,7 +177,7 @@
         pointer-events: none;
         filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
         /* Ensure block display to prevent baseline shifts */
-        display: block; 
+        display: block;
     }
 
     /* --- GRID --- */
@@ -289,7 +288,7 @@
     .slot-placeholder { 
         font-family: var(--font-ui);
         font-size: 1.5rem; 
-        color: #333; 
+        color: #333;
         font-weight: bold;
     }
 
@@ -388,7 +387,7 @@
     <div class="panel panel-full p-adv">
         <div class="panel-header">
             <div class="category-title t-orange">3-1 / 3-2</div>
-            <span class="category-desc">Teams Advancing to Playoffs</span>
+            <span class="category-desc">Teams Advancing</span>
         </div>
         <div class="panel-content">
             <div class="slots-row" id="slots-advance"></div>
@@ -403,22 +402,22 @@
 
 <script>
     const TEAMS = [
-        { name: "MIBR", id: "mibr", logo: "https://i.imgur.com/uZaGEQJ.png" },
-        { name: "Imperial", id: "imperial", logo: "https://i.imgur.com/N9b8GtT.png" },
-        { name: "Passion UA", id: "passion", logo: "https://i.imgur.com/UDmtx0S.png" },
-        { name: "3DMAX", id: "3dmax", logo: "https://i.imgur.com/MQoihGJ.png" },
-        { name: "Astralis", id: "astralis", logo: "https://i.imgur.com/XD2K3Kz.png" },
-        { name: "M80", id: "m80", logo: "https://i.imgur.com/dO10wnN.png" },
-        { name: "Liquid", id: "liquid", logo: "https://i.imgur.com/gstZIWf.png" },
-        { name: "Aurora", id: "aurora", logo: "https://i.imgur.com/tztun45.png" },
-        { name: "NIP", id: "nip", logo: "https://i.imgur.com/GL3xl7m.png" },
-        { name: "FlyQuest", id: "flyquest", logo: "https://i.imgur.com/zdh9CUD.png" },
-        { name: "TYLOO", id: "tyloo", logo: "https://i.imgur.com/7CTyRqF.png" },
-        { name: "PARIVISION", id: "parivision", logo: "https://i.imgur.com/JVmpGws.png" },
-        { name: "NAVI", id: "navi", logo: "https://i.imgur.com/s7anw74.png" },
-        { name: "FaZe", id: "faze", logo: "https://i.imgur.com/1B4hj1G.png" },
-        { name: "Fnatic", id: "fnatic", logo: "https://i.imgur.com/isPQZnA.png" },
-        { name: "B8", id: "b8", logo: "https://i.imgur.com/YGPqQVI.png" }
+        { name: "Team 1", id: "t1", logo: "https://i.imgur.com/3KQXpJe.png" },
+        { name: "Team 2", id: "t2", logo: "https://i.imgur.com/f5bHaZd.png" },
+        { name: "Team 3", id: "t3", logo: "https://i.imgur.com/1lSSUvP.png" },
+        { name: "Team 4", id: "t4", logo: "https://i.imgur.com/cCAjYXX.png" },
+        { name: "Team 5", id: "t5", logo: "https://i.imgur.com/BRXSu1u.png" },
+        { name: "Team 6", id: "t6", logo: "https://i.imgur.com/B9DJO0y.png" },
+        { name: "Team 7", id: "t7", logo: "https://i.imgur.com/I3DWp0s.png" },
+        { name: "Team 8", id: "t8", logo: "https://i.imgur.com/HwG9BvC.png" },
+        { name: "Team 9", id: "t9", logo: "https://i.imgur.com/FfvHn5D.png" },
+        { name: "Team 10", id: "t10", logo: "https://i.imgur.com/VZzf81B.png" },
+        { name: "Team 11", id: "t11", logo: "https://i.imgur.com/RYWY6yS.png" },
+        { name: "Team 12", id: "t12", logo: "https://i.imgur.com/yGYCn40.png" },
+        { name: "Team 13", id: "t13", logo: "https://i.imgur.com/mlBFh94.png" },
+        { name: "Team 14", id: "t14", logo: "https://i.imgur.com/5sZOoJK.png" },
+        { name: "Team 15", id: "t15", logo: "https://i.imgur.com/WRBSDps.png" },
+        { name: "Team 16", id: "t16", logo: "https://i.imgur.com/vQ0r0x4.png" }
     ];
 
     let picks = {
@@ -426,11 +425,9 @@
         '0-3': [null, null],
         'advance': [null, null, null, null, null, null]
     };
-    
-    // 6 Slots for Advance
     picks['advance'] = [null, null, null, null, null, null]; 
 
-    let selectedTeamId = null; 
+    let selectedTeamId = null;
 
     function init() {
         renderRail();
@@ -452,7 +449,6 @@
             img.className = 'rail-logo';
             img.draggable = false; 
             
-            // REMOVED: Tooltip element creation
             el.appendChild(img);
             
             el.onclick = () => selectTeam(team.id);
@@ -499,6 +495,7 @@
 
     function selectTeam(id) {
         if (isTeamPlaced(id)) return;
+        
         if (selectedTeamId === id) {
             selectedTeamId = null;
         } else {
@@ -508,16 +505,19 @@
     }
 
     function handleSlotClick(cat, idx) {
-        if (picks[cat][idx]) {
-            picks[cat][idx] = null;
+        // LOGIC CHANGE: Check for selected team FIRST. 
+        // If a team is selected, we place it (swapping whatever is there).
+        if (selectedTeamId) {
+            picks[cat][idx] = selectedTeamId;
+            selectedTeamId = null; 
             renderRail();
             renderSlots();
             return;
         }
 
-        if (selectedTeamId) {
-            picks[cat][idx] = selectedTeamId;
-            selectedTeamId = null; 
+        // If NO team is selected, but the slot is full, then we remove it.
+        if (picks[cat][idx]) {
+            picks[cat][idx] = null;
             renderRail();
             renderSlots();
         }
